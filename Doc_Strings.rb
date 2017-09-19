@@ -33,3 +33,7 @@ module DocStrings
     @doc_strings ||= {}
   end
 end
+
+class Object
+  include DocStrings
+end
