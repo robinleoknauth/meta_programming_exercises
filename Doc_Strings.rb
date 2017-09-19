@@ -29,4 +29,7 @@ module DocStrings
     end
   end
 
+  def doc_strings
+    @doc_strings ||= {}
+  end
 end
