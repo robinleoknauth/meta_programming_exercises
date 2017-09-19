@@ -9,4 +9,6 @@ module Kernel
       end
     end
   end
+
+  private :attr_accessible
 end
