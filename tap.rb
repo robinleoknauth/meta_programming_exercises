@@ -1,10 +1,10 @@
 class Object
-  def tab
+  def tap
     yield(self) if block_given?
     self
   end
 
-  def tab2(&block)
+  def tap2(&block)
     instance_eval(&block)
     self
   end
@@ -20,5 +20,8 @@ class MyClass
     "MyClass#foo"
   end
 end
+
+
 obj = MyClass.new
 obj.tap2 { puts @var }.foo # Output: "instance var" returns: "MyClass#foo"
+p obj.tap { puts @var }
