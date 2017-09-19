@@ -8,6 +8,6 @@ module ModuleOverrides
   end
 end
 
-module Module
+class Module
   prepend ModuleOverrides
 end
