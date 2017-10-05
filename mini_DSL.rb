@@ -18,10 +18,10 @@ end
 
 
 html = HTML.new do
-  h1 "Headline"
-  h3 "Smaller headline"
+  p h1 "Headline"
+  p h3 "Smaller headline"
   p "Long stupid text. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla."
-  
+
 end
 
 puts html.render
